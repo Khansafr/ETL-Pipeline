@@ -1,0 +1,23 @@
+# Menjalankan Skrip ETL Pipeline
+Untuk menjalankan proses Extract, Transform, dan Load secara lengkap, jalankan perintah berikut di terminal:
+
+python main.py
+
+# Menjalankan Unit Test
+Seluruh pengujian unit test berada dalam folder `tests/`. Untuk menjalankan semua pengujian:
+
+python -m pytest tests/
+
+# Menjalankan Test Coverage
+Untuk mengukur cakupan pengujian terhadap kode, gunakan perintah:
+
+coverage run -m pytest tests/
+coverage report
+
+# URL Google Sheets (Jika digunakan)
+Tidak digunakan. Seluruh hasil disimpan dalam bentuk file CSV lokal (`products.csv`).
+
+# Catatan Tambahan
+- Struktur direktori sudah modular dengan folder `utils/` untuk logika ETL.
+- Seluruh file pengujian berada di folder `tests/` dan mencakup pengujian untuk fungsi extract, transform, dan load.
+- Test coverage mencapai di atas 80% (Advanced).
